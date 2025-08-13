@@ -22,6 +22,17 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Custom CSS for speaker images -->
+  <style>
+    .speaker-photo {
+      width: 250px;
+      height: 250px;
+      object-fit: cover; /* This will crop the image to fit the container */
+      object-position: center; /* This will center the image within the frame */
+    }
+  </style>
+
 </head>
 
 <body>
@@ -32,7 +43,7 @@
 
       <div id="logo" class="me-auto">
         <a href="index.html" class="scrollto">
-          <img src="assets/img/tedx-logo.png" id="tedx-logo" alt="TEDxTeknoratStreet logo" title="">
+          <img src="assets/img/tedx-logo.png" alt="" title="">
         </a>
       </div>
 
@@ -43,7 +54,6 @@
           <li><a class="nav-link scrollto active" href="speakers-full.html">Speakers</a></li>
           <li><a class="nav-link scrollto" href="index.html#schedule">Schedule</a></li>
           <li><a class="nav-link scrollto" href="sponsors.html">Sponsors</a></li>
-          <!-- <li><a class="nav-link scrollto" href="activities.html">Activities</a></li> -->
           <li><a class="nav-link scrollto" href="tickets.html">Tickets</a></li>
           <li><a class="nav-link scrollto" href="merchandise.html">Merchandise</a></li>
           <li><a class="nav-link scrollto" href="committee.html">Committee</a></li>
@@ -51,113 +61,105 @@
           <li><a class="nav-link scrollto" href="#footer">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
+      </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
 
   <main id="main" class="main-page">
-    <section id="speakers-full-content" class="section-with-bg"
-      style="background-image: url('assets/img/bg-for-all.jpg'); background-size: cover; background-attachment: fixed; color: #f8f9fa;">
+
+    <!-- ======= Speakers Section ======= -->
+    <section id="speakers">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Our Esteemed Speakers for 2025</h2>
-          <p>Meet the minds behind the ideas worth spreading. Full lineup coming soon!</p>
+          <h2>Event Speakers</h2>
+          <p>Meet the minds shaping the conversation</p>
         </div>
 
         <div class="row">
-
-          <!-- Speaker 1 Placeholder -->
-          <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card h-100" style="background-color: #ffffff; color: #212529;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="https://placehold.co/400x500/f82249/FFFFFF?text=Speaker+TBA"
-                    class="img-fluid rounded-start h-100 object-fit-cover" alt="Speaker To Be Announced">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Speaker Name To Be Announced</h5>
-                    <p class="card-text text-muted">Expertise To Be Revealed</p>
-                    <p class="card-text">A brief and engaging bio for the speaker will be placed here once confirmed.
-                      This will highlight their expertise and the topic of their talk.</p>
-                    <div class="social">
-                      <a href="#"><i class="bi bi-twitter"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
+          <!-- Speaker 1 -->
+          <div id="speaker-1" class="col-12 mb-5">
+            <div class="row align-items-center">
+              <div class="col-md-3 text-center">
+                <img src="assets/img/speakers/michael_smith.jpeg" alt="Michael Gabriel Smith" class="rounded speaker-photo">
+              </div>
+              <div class="col-md-9">
+                <div class="details">
+                  <h2>Michael Gabriel Smith</h2>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
                   </div>
+                  <p>Michael Gabriel Smith (a.k.a Stitch) is a Professional Beatboxer from Malaysia. Picking up beatboxing in 2017, he only took 4 years to reach the World Level of Beatboxing by qualifying for GBB21 (The Grand Beatbox Battle). He was the first Malaysian in history to achieve this, and has also become the first to qualify for it a 2nd time in 2024.</p>
+                  <p><strong>Speech:</strong> “One silly question changed my life”</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Speaker 2 Placeholder -->
-          <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card h-100" style="background-color: #ffffff; color: #212529;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="https://placehold.co/400x500/212529/FFFFFF?text=Speaker+TBA"
-                    class="img-fluid rounded-start h-100 object-fit-cover" alt="Speaker To Be Announced">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Speaker Name To Be Announced</h5>
-                    <p class="card-text text-muted">Expertise To Be Revealed</p>
-                    <p class="card-text">A brief and engaging bio for the speaker will be placed here once confirmed.
-                      This will highlight their expertise and the topic of their talk.</p>
-                    <div class="social">
-                      <a href="#"><i class="bi bi-twitter"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
+          <!-- Speaker 2 -->
+          <div id="speaker-2" class="col-12 mb-5">
+            <div class="row align-items-center">
+              <div class="col-md-3 text-center">
+                <img src="assets/img/speakers/diana_jayasauri.jpeg" alt="Dr. Diana Jayasauri" class="rounded speaker-photo">
+              </div>
+              <div class="col-md-9">
+                <div class="details">
+                  <h2>Dr. Diana Jayasauri</h2>
+                   <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
                   </div>
+                  <p>Dr. Diana is a seasoned expert in Organisational Change Management with nearly 15 years of experience leading innovation, acculturation, and digital transformation across Fortune 500 companies and government institutions. Her work is dedicated to shaping a forward-thinking, customer-centric service excellence.</p>
+                  <p><strong>Speech:</strong> “Spark change: The resilient mind”</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Speaker 3 Placeholder -->
-          <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card h-100" style="background-color: #ffffff; color: #212529;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="https://placehold.co/400x500/f82249/FFFFFF?text=Speaker+TBA"
-                    class="img-fluid rounded-start h-100 object-fit-cover" alt="Speaker To Be Announced">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Speaker Name To Be Announced</h5>
-                    <p class="card-text text-muted">Expertise To Be Revealed</p>
-                    <p class="card-text">A brief and engaging bio for the speaker will be placed here once confirmed.
-                      This will highlight their expertise and the topic of their talk.</p>
-                    <div class="social">
-                      <a href="#"><i class="bi bi-twitter"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
+          <!-- Speaker 3 -->
+          <div id="speaker-3" class="col-12 mb-5">
+            <div class="row align-items-center">
+              <div class="col-md-3 text-center">
+                <img src="assets/img/speakers/et_tan.jpg" alt="ET Tan" class="rounded speaker-photo">
+              </div>
+              <div class="col-md-9">
+                <div class="details">
+                  <h2>ET Tan</h2>
+                   <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
                   </div>
+                  <p>Standing on the shoulders of giants, ET Tan has helped shape technologies used by billions, from infrared standards that paved the way for Bluetooth to innovations we take for granted today. Now based in Malaysia, he mentors startups and advises governments and changemakers on tech, talent, and transformation. In his TEDx talk, he shares how constraints don’t stifle creativity—they ignite it, when fuelled by curiosity and the drive to solve real-world challenges.</p>
+                  <p><strong>Speech:</strong> “Why constraints ignite creativity?”</p>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Speaker 4 Placeholder -->
-          <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="card h-100" style="background-color: #ffffff; color: #212529;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="https://placehold.co/400x500/212529/FFFFFF?text=Speaker+TBA"
-                    class="img-fluid rounded-start h-100 object-fit-cover" alt="Speaker To Be Announced">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Speaker Name To Be Announced</h5>
-                    <p class="card-text text-muted">Expertise To Be Revealed</p>
-                    <p class="card-text">A brief and engaging bio for the speaker will be placed here once confirmed.
-                      This will highlight their expertise and the topic of their talk.</p>
-                    <div class="social">
-                      <a href="#"><i class="bi bi-twitter"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
+          
+          <!-- Speaker 4 -->
+          <div id="speaker-4" class="col-12 mb-5">
+            <div class="row align-items-center">
+              <div class="col-md-3 text-center">
+                <img src="assets/img/speakers/dhabita.png" alt="Dhabita Auji" class="rounded speaker-photo">
+              </div>
+              <div class="col-md-9">
+                <div class="details">
+                  <h2>Dhabita Auji</h2>
+                   <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
                   </div>
+                  <p>At 18, she was already on air with Hitz radio. Today, Dhabita Auji is a host, content creator with 1.4M+ followers, and Malaysia’s representative at Netflix Tudum in LA and this September, she’s making her acting debut. From stage to screen, her mission is simple: inspire, uplift, and remind people that even the smallest action can make a big difference.</p>
+                  <p><strong>Speech:</strong> “The myth of being ‘on time’”</p>
                 </div>
               </div>
             </div>
@@ -165,7 +167,8 @@
 
         </div>
       </div>
-    </section>
+    </section><!-- End Speakers Section -->
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -173,9 +176,12 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
+
           <div class="col-lg-6 col-md-6 footer-info">
             <img src="assets/img/tedx-logo.png" alt="TEDxTeknoratStreet Logo">
+            <br>
           </div>
+
           <div class="col-lg-6 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
@@ -183,26 +189,28 @@
               <strong>Phone:</strong> 014-2702915<br>
               <strong>Email:</strong> kalladeveshwararao@gmail.com<br>
             </p>
+
             <div class="social-links">
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
               <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
               <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-              <a href="#" class="youtube"><i class="bi bi-youtube"></i></a>
             </div>
+
           </div>
+
         </div>
       </div>
     </div>
+
     <div class="container">
       <div class="copyright">
         This independent TEDx event is operated under license from TED
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer><!-- End  Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
@@ -212,7 +220,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/index.js"></script>
 
 </body>
 

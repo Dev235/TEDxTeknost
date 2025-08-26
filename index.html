@@ -126,43 +126,61 @@
           <p>Here are some of our speakers</p>
         </div>
 
-        <div class="row" id="speaker-section">
-          <div class="col-lg-3 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/speakers/michael_smith.jpeg" alt="Michael Gabriel Smith" class="img-fluid">
-              <div class="details">
-                <h3><a href="speakers-full.html#speaker-1">Michael Gabriel Smith</a></h3>
-                <p>Professional Beatboxer</p>
+        <div class="swiper speakers-slider">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/img/speakers/michael_smith.jpeg" alt="Michael Gabriel Smith" class="img-fluid">
+                <div class="details">
+                  <h3><a href="speakers-full.html#speaker-1">Michael Gabriel Smith</a></h3>
+                  <p>Professional Beatboxer</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/speakers/diana_jayasauri.jpeg" alt="Dr. Diana Jayasauri" class="img-fluid">
-              <div class="details">
-                <h3><a href="speakers-full.html#speaker-2">Dr. Diana Jayasauri</a></h3>
-                <p>Expert in Organisational Change Management</p>
+
+            <div class="swiper-slide">
+              <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/speakers/diana_jayasauri.jpeg" alt="Dr. Diana Jayasauri" class="img-fluid">
+                <div class="details">
+                  <h3><a href="speakers-full.html#speaker-2">Dr. Diana Jayasauri</a></h3>
+                  <p>Expert in Organisational Change Management</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="assets/img/speakers/et_tan.jpg" alt="ET Tan" class="img-fluid">
-              <div class="details">
-                <h3><a href="speakers-full.html#speaker-3">ET Tan</a></h3>
-                <p>Technology Innovator & Mentor</p>
+
+            <div class="swiper-slide">
+              <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/img/speakers/et_tan.jpg" alt="ET Tan" class="img-fluid">
+                <div class="details">
+                  <h3><a href="speakers-full.html#speaker-3">ET Tan</a></h3>
+                  <p>Technology Innovator & Mentor</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="400">
-              <img src="assets/img/speakers/dhabita.png" alt="Dhabita Auji" class="img-fluid">
-              <div class="details">
-                <h3><a href="speakers-full.html#speaker-4">Dhabita Auji</a></h3>
-                <p>Host & Content Creator</p>
+
+            <div class="swiper-slide">
+              <div class="speaker" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/img/speakers/dhabita.png" alt="Dhabita Auji" class="img-fluid">
+                <div class="details">
+                  <h3><a href="speakers-full.html#speaker-4">Dhabita Auji</a></h3>
+                  <p>Host & Content Creator</p>
+                </div>
               </div>
             </div>
+
+            <div class="swiper-slide">
+              <div class="speaker" data-aos="fade-up" data-aos-delay="500">
+                <img src="assets/img/speakers/crystal.jpg" alt="Crystal Lim" class="img-fluid">
+                <div class="details">
+                  <h3><a href="speakers-full.html#speaker-5">Crystal Lim</a></h3>
+                  <p>Expert on the Future of Work</p>
+                </div>
+              </div>
+            </div>
+
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
 
@@ -300,7 +318,40 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script type="module" src="assets/js/index.js"></script>
+  
+  <!-- Page Specific JS for Carousel -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      new Swiper('.speakers-slider', {
+        speed: 600,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false
+        },
+        slidesPerView: 'auto',
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 20
+          }
+        }
+      });
+    });
+  </script>
 
 </body>
 
